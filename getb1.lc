@@ -1,0 +1,38 @@
+<?lc 
+
+    put "parng.on-rev.com" into tDatabaseAddress
+    put "parng_users" into tDatabaseName
+    put "parng_parng" into tDatabaseUser
+    put "Team6868" into tDatabasePassword
+    
+    -- connect to the database
+    put revOpenDatabase("MySQL", tDatabaseAddress, tDatabaseName, tDatabaseUser, tDatabasePassword) into tResult
+    
+    -- check if it worked and display an error message if it didn't
+    -- & set the connection ID global
+    if tResult is a number then
+        put tResult into gConnectionID
+        
+		revExecuteSQL gConnectionID, "SET NAMES 'utf8'"
+		put $_POST["uuid"] into tuuid
+     
+   -- construct the SQL
+    put "SELECT uuid FROM b1 WHERE uuid=" & quote & tuuid & quote into tSQL
+   
+    put revDataFromQuery(tab, cr, gConnectionID, tSQL) into tData
+   
+   -- check the result and display the data or an error message
+   if item 1 of tData = "revdberr" then
+      put "2"
+   else
+      if tData = "" then
+	    put "0"
+	  else
+	    put tData
+	  end if
+   end if
+   revCloseDatabase gConnectionID
+else
+  put "2"	
+end if
+?>
