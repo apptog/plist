@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://www.payever.com/pe/pe.ipa</string>
+					<string>http://www.livecode.cn/pe/pe.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>http://www.payever.com/pe/pelogo.png</string>
+					<string>http://www.livecode.cn/pe/pelogo.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -27,13 +27,13 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>http://www.payever.com/pe/pelogo.png</string>
+					<string>http://www.livecode.cn/pe/pelogo.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.parng.payever</string>
+				<string>com.parng.petc</string>
 				<key>bundle-version</key>
 				<string>1.0.0</string>
 				<key>kind</key>
@@ -41,7 +41,7 @@
 				<key>subtitle</key>
 				<string></string>
 				<key>title</key>
-				<string>貝祝福</string>
+				<string>台灣貝祝福</string>
 			</dict>
 		</dict>
 	</array>
